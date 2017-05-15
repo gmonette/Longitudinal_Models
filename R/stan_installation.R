@@ -100,4 +100,6 @@ library(rstan)
 funnel <- stan_demo("funnel", seed = 12345)   # has 5 divergent transitions
 pairs(funnel, pars = c("y", "x[1]", "lp__"), las = 1) # below the diagonal
 funnel_reparam <- stan_demo("funnel_reparam") # has no divergent transitions
+pairs(funnel_reparam, pars = c("y", "x[1]", "lp__"), las = 1) # below the diagonal
 #' 
+p
